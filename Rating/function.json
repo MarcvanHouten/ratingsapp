@@ -14,7 +14,7 @@
     },
     {
       "type": "cosmosDB",
-      "name": "<TBD>",
+      "name": "<TBD in>",
       "databaseName": "<TBD>",
       "collectionName": "<TBD>",
       "connection": "CosmosDBConnection",
@@ -22,7 +22,7 @@
     },
     {
       "type": "cosmosDB",
-      "name": "<TBD>",
+      "name": "<TBD out>",
       "databaseName": "<TBD>",
       "collectionName": "<TBD>",
       "connection": "CosmosDBConnection",
