@@ -1,0 +1,37 @@
+{
+  "scriptFile": "rating.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route":"rating/{id}",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "cosmosDB",
+      "name": "<TBD>",
+      "databaseName": "<TBD>",
+      "collectionName": "<TBD>",
+      "connection": "CosmosDBConnection",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "<TBD>",
+      "databaseName": "<TBD>",
+      "collectionName": "<TBD>",
+      "connection": "CosmosDBConnection",
+      "direction": "out"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}

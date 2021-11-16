@@ -1,0 +1,29 @@
+{
+  "scriptFile": "ratings.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route":"ratings/{userId}",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "cosmosDB",
+      "name": "ratings",
+      "databaseName": "<TBD>",
+      "collectionName": "<TBD>",
+      "connection": "CosmosDBConnection",
+      "direction": "in",
+      "userId": "{userId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
